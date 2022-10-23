@@ -38,24 +38,25 @@
 
 .horiz__name--abbey {
     font-family: type.$abbey-font;
-    font-weight: 500;
+    font-weight: bold;
     font-variant: small-caps;
 }
 
 .horiz__name--lessees {
     font-family: type.$lessees-font;
+    font-weight: 600;
 }
 
 .horiz__date {
     font-family: type.$date-font;
     font-size: 2.6rem;
-    letter-spacing: -0.05em;
-    font-weight: 700;
+    letter-spacing: -0.06em;
+    font-weight: bold;
 }
 
 .horiz__reunion {
     font-family: type.$reunion-font;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 900;
     letter-spacing: 0.2em;
 }
@@ -78,7 +79,7 @@
 
 .vertic__location {
     font-family: type.$location-font;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     letter-spacing: 0.07em;
 }
 
@@ -91,7 +92,8 @@
 .vertic__info {
     font-family: type.$info-font;
     font-size: 1.6rem;
-    letter-spacing: 0.04em;
+    font-weight: bold;
+    letter-spacing: 0.03em;
     word-spacing: -0.2em;
     line-height: 1.5em;
 }
@@ -117,9 +119,7 @@
 .horiz__pioneers--and {
     font-size: 2rem;
     writing-mode: sideways-lr;
-    font-variant: small-caps;
     font-style: italic;
-    line-height: 0.6em;
 }
 
 /* Vertical Structure */

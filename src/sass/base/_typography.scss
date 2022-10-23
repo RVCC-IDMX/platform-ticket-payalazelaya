@@ -21,11 +21,6 @@
 }
 
 @font-face {
-    font-family: 'Colour Me Purple';
-    src: url('../../fonts/Colour\ Me\ Purple.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'EB Garamond';
     src: url('../../fonts/EBGaramond-Regular.ttf') format('truetype');
 }
@@ -33,6 +28,11 @@
 @font-face {
     font-family: 'Grewmoon';
     src: url('../../fonts/Grewmoon.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IM Fell French Canon SC';
+    src: url('../../fonts/IMFeFCsc28P.ttf') format('truetype');
 }
 
 @font-face {
@@ -60,7 +60,7 @@ $pioneers-font: "Showguide", serif;
 $price-font: "Grewmoon", serif;
 $location-font: "Buttershine", serif;
 $eve-font: "Abril", serif;
-$info-font: "Colour Me Purple", serif;
+$info-font: "IM Fell French Canon SC", serif;
 $company-font: $date-font, serif;
 
 // body font styling vars
