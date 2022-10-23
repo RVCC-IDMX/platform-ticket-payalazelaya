@@ -3,6 +3,8 @@
 @use "../abstracts/variables" as var;
 @use "../base/typography" as type;
 
+/* Grid Settings */
+
 .ticket {
     background-color: var.$bg-color;
     width: 800px;
@@ -17,7 +19,56 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.horiz__svg, .horiz__date, .horiz__eventpartone, .horiz__eventparttwo, .horiz__price {
+.vertic {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Font Styling */
+
+.horiz__abbey {
+    font-family: type.$abbey-font;
+}
+
+.horiz__lessees {
+    font-family: type.$lessees-font;
+}
+
+.horiz__date {
+    font-family: type.$date-font;
+}
+
+.horiz__reunion {
+    font-family: type.$reunion-font;
+}
+
+.horiz__pioneers {
+    font-family: type.$pioneers-font;
+}
+
+.horiz__price {
+    font-family: type.$price-font;
+}
+
+.vertic__location {
+    font-family: type.$location-font;
+}
+
+.vertic__eve {
+    font-family: type.$eve-font;
+}
+
+.vertic__info {
+    font-family: type.$info-font;
+}
+
+.vertic__company {
+    font-family: type.$company-font;
+}
+
+/* Horizontal Structure */
+
+.horiz__svg, .horiz__date, .horiz__reunion, .horiz__pioneers, .horiz__price {
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -27,24 +78,13 @@
     border: 1px solid var.$text-color;
 }
 
-.horiz__linepartone, .horiz__lineparttwo, .horiz__date, .horiz__eventparttwo {
+.horiz__abbey, .horiz__lessees, .horiz__date, .horiz__pioneers {
     border-bottom: 1px solid var.$text-color;
 }
 
-.horiz__date {
-    font-family: type.$date-font;
-}
+/* Vertical Structure */
 
-.horiz__eventparttwo {
-    font-family: type.$eventparttwo-font;
-}
-
-.vertic {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.vertic__location, .vertic__date, .vertic__info {
+.vertic__location, .vertic__eve, .vertic__info {
     border-left: 1px solid var.$text-color;
 }
 
