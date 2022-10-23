@@ -1,1 +1,48 @@
 /* home */
+
+@use "../abstracts/variables" as var;
+
+.ticket {
+    background-color: var.$bg-color;
+    width: 800px;
+    height: 330px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1em;
+}
+
+.horizontal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.horizontal__svg, .horizontal__date, .horizontal__eventpartone, .horizontal__eventparttwo, .horizontal__price {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.horizontal__svg {
+    padding: 0;
+    border: 1px solid var.$text-color;
+}
+
+.horizontal__linepartone, .horizontal__lineparttwo, .horizontal__date, .horizontal__eventparttwo {
+    border-bottom: 1px solid var.$text-color;
+}
+
+.vertical {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.vertical__location, .vertical__date, .vertical__info {
+    border-left: 1px solid var.$text-color;
+}
+
+.vertical__name {
+    border-right: 1px solid var.$text-color;
+}
+
+.vertical {
+    writing-mode: vertical-rl;
+}
