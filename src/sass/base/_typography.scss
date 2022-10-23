@@ -1,8 +1,67 @@
 /* typography */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// format('opentype')
 
-$font: "Poppins", serif;
+@font-face {
+    font-family: 'Abril';
+    font-style: normal;
+    src: url('../../fonts/AbrilFatface-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../../fonts/Alegreya-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Buttershine';
+    src: url('../../fonts/BUTTERSHINE\ SERIF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Colour Me Purple';
+    src: url('../../fonts/Colour\ Me\ Purple.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/EBGaramond-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Grewmoon';
+    src: url('../../fonts/Grewmoon.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 100 700;
+    src: url('../../fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Showguide';
+    src: url('../../fonts/Showguide.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../../fonts/Work-sans.medium.ttf') format('truetype');
+}
+
+$font: serif;
+$linepartone-font: "Alegreya", serif;
+$lineparttwo-font: "EB Garamond", serif;
+$date-font: "Roboto", serif;
+$eventpartone-font: "Work Sans", serif;
+$eventparttwo-font: "Showguide", serif;
+$price-font: "Grewmoon", serif;
+$location-font: "Buttershine", serif;
+$datetwo-font: "Abril", serif;
+$info-font: "Colour Me Purple", serif;
+$company: $date-font, serif;
 
 // body font styling vars
 $body-font-size: 120%;

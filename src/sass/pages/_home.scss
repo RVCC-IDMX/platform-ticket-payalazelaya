@@ -1,6 +1,7 @@
 /* home */
 
 @use "../abstracts/variables" as var;
+@use "../base/typography" as type;
 
 .ticket {
     background-color: var.$bg-color;
@@ -11,38 +12,46 @@
     padding: 1em;
 }
 
-.horizontal {
+.horiz {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.horizontal__svg, .horizontal__date, .horizontal__eventpartone, .horizontal__eventparttwo, .horizontal__price {
+.horiz__svg, .horiz__date, .horiz__eventpartone, .horiz__eventparttwo, .horiz__price {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-.horizontal__svg {
+.horiz__svg {
     padding: 0;
     border: 1px solid var.$text-color;
 }
 
-.horizontal__linepartone, .horizontal__lineparttwo, .horizontal__date, .horizontal__eventparttwo {
+.horiz__linepartone, .horiz__lineparttwo, .horiz__date, .horiz__eventparttwo {
     border-bottom: 1px solid var.$text-color;
 }
 
-.vertical {
+.horiz__date {
+    font-family: type.$date-font;
+}
+
+.horiz__eventparttwo {
+    font-family: type.$eventparttwo-font;
+}
+
+.vertic {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.vertical__location, .vertical__date, .vertical__info {
+.vertic__location, .vertic__date, .vertic__info {
     border-left: 1px solid var.$text-color;
 }
 
-.vertical__name {
+.vertic__name {
     border-right: 1px solid var.$text-color;
 }
 
-.vertical {
+.vertic {
     writing-mode: vertical-rl;
 }
